@@ -2,11 +2,11 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 body{
-	background: #FFD0A0;
+	background: #AFD0A0;
 }
 
 .status {
-  border-bottom: solid 1px #CCCCCC;
+  border-bottom: solid 1px #FF00CC;
   padding: 5px;
   border-radius: 5px
 }
@@ -17,8 +17,10 @@ body{
 
 .status.hover {
 	background: #FFFFA0;
-	padding: 0;
+	padding: 5px;
 	border: 5px solid #FFFFA0;
+	  border-bottom: solid 1px #FF00CC;
+
 	border-radius: 10px;
 }
 
@@ -37,4 +39,23 @@ body{
 	border-radius: 10px 0;
 }
 
+.form-actions .btn{
+	color: #000000;
 
+}
+
+.form-actions{
+	background: #00DDDD;
+	border-radius: 5px
+}
+
+.alert {
+	background: #00DDDD;
+	border-radius: 5px;
+}
+
+.core {
+	padding: 10px;
+	background: #DDCCCC;
+	border-radius: 10px
+}

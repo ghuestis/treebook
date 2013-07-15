@@ -16,3 +16,34 @@ body {
 	padding-top: 40px;
 }
 
+.leftchunk {
+	mid-width: 300px;
+}
+
+.middlechunk {
+	min-width: 500px;
+}
+
+.savvy {
+	padding-top: 30px;
+}
+
+.darken-header {
+  display: block;
+  padding: 3px 15px;
+  font-size: 11px;
+  font-weight: bold;
+  line-height: 20px;
+  color: #666666;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+li {
+	list-style: none;
+}
+
+li .btn {
+	margin-left: 15px;
+}
