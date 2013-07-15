@@ -47,3 +47,7 @@ li {
 li .btn {
 	margin-left: 15px;
 }
+
+.drop-group {
+	position: relative;
+}

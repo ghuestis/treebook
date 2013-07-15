@@ -3,7 +3,7 @@
 		<h1>Feed</h1>
 	</div>
 
-	<%= link_to "Post a New Status", new_status_path, class: "btn btn-success" %>
+	<%= link_to "Post a New Status", new_status_path, class: "btn btn-primary" %>
 
 
 	<% @statuses.reverse.each do |status| %>
@@ -12,7 +12,7 @@
 		<p><%= status.content %></p>
 		<div class="meta">
 			<%= link_to time_ago_in_words(status.created_at) + " ago", status %> | 
-			<% require('/home/mamanbrigitte/gitstore/treebook/app/assets/scripts/testscripts.rb') %>
+			<% require File.expand_path('./../../../assets/scripts/testscripts.rb', __FILE__) %>
 			<%= monkey_around() %> |
 			<span class="admin">
 				<%= link_to "Edit", edit_status_path(status) %> | 

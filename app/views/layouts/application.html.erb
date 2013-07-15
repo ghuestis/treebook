@@ -14,7 +14,40 @@
 			<div class="container">
 				<a href="#" class="brand">Loki</a>
 				<ul class="nav">
-					<li><%= link_to "All Statuses", statuses_path %></li>
+					<li><%= link_to "Feed", statuses_path %></li>
+					<li class="drop-group">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+							Stats
+							<span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">
+							<li><%= link_to "Error Rates", '#'%></li>
+							<li><%= link_to "Output Quantities", '#'%></li>
+							<li><%= link_to "Flow Rates", '#'%></li>
+						</ul>
+					</li>
+					<li class="drop-group">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+							Utilities and Tests
+							<span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">
+							<li><%= link_to "Storycreator Algorithms", storycreator_algorithms_path %></li>
+							<li><%= link_to "Sanitation Methods", '#'%></li>
+							<li><%= link_to "Pathing Tests", '#'%></li>
+						</ul>
+					</li>
+					<li class="drop-group">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+							Contact HLE
+							<span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">
+							<li><%= link_to "Submit Editorial Request", storycreator_algorithms_path %></li>
+							<li><%= link_to "Red Phone", '#'%></li>
+							<li><%= link_to "Bat Phone", '#'%></li>
+						</ul>
+					</li>
 				</ul>
 			</div>
 		</div>
@@ -25,17 +58,17 @@
 				<div class="sidebar-nav leftchunk">
 					<ul class="navbar navbar-fixed-top savvy span3">
 						<li class="darken-header">Stats</li>
-						<li><%= link_to "Error Rates", '#', class:"btn btn-success" %></li>
-						<li><%= link_to "Output Quantities", '#', class:"btn btn-success" %></li>
-						<li><%= link_to "Flow Rates", '#', class:"btn btn-success" %></li>
+						<li><%= link_to "Error Rates", '#', class:"btn btn-primary" %></li>
+						<li><%= link_to "Output Quantities", '#', class:"btn btn-primary" %></li>
+						<li><%= link_to "Flow Rates", '#', class:"btn btn-primary" %></li>
 						<li class="darken-header">Utilities and Tests</li>
-						<li><%= link_to "Storycreator Algorithms", storycreator_algorithms_path, class:"btn btn-success" %></li>
-						<li><%= link_to "Sanitation Methods", '#', class:"btn btn-success" %></li>
-						<li><%= link_to "Pathing Tests", '#', class:"btn btn-success" %></li>
+						<li><%= link_to "Storycreator Algorithms", storycreator_algorithms_path, class:"btn btn-primary" %></li>
+						<li><%= link_to "Sanitation Methods", '#', class:"btn btn-primary" %></li>
+						<li><%= link_to "Pathing Tests", '#', class:"btn btn-primary" %></li>
 						<li class="darken-header">Contact HLE</li>
-						<li><%= link_to "Submit Editorial Request", '#', class:"btn btn-success" %></li>
-						<li><%= link_to "Red Phone", '#', class:"btn btn-success" %></li>
-						<li><%= link_to "Bat Phone", '#', class:"btn btn-success" %></li>
+						<li><%= link_to "Submit Editorial Request", '#', class:"btn btn-primary" %></li>
+						<li><%= link_to "Red Phone", '#', class:"btn btn-primary" %></li>
+						<li><%= link_to "Bat Phone", '#', class:"btn btn-primary" %></li>
 					</ul>
 				</div>
 			</div>
