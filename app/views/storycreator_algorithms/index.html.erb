@@ -1,0 +1,29 @@
+<h1>Listing storycreator_algorithms</h1>
+
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Method name</th>
+    <th>Path</th>
+    <th>Description</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @storycreator_algorithms.each do |storycreator_algorithm| %>
+  <tr>
+    <td><%= storycreator_algorithm.id %></td>
+    <td><%= storycreator_algorithm.method_name %></td>
+    <td><%= storycreator_algorithm.path %></td>
+    <td><%= storycreator_algorithm.description %></td>
+    <td><%= link_to 'Show', storycreator_algorithm %></td>
+    <td><%= link_to 'Edit', edit_storycreator_algorithm_path(storycreator_algorithm) %></td>
+    <td><%= link_to 'Destroy', storycreator_algorithm, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Storycreator algorithm', new_storycreator_algorithm_path %>

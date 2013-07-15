@@ -1,0 +1,2 @@
+module StorycreatorAlgorithmsHelper
+end

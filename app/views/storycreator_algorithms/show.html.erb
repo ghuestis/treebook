@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Id:</b>
+  <%= @storycreator_algorithm.id %>
+</p>
+
+<p>
+  <b>Method name:</b>
+  <%= @storycreator_algorithm.method_name %>
+</p>
+
+<p>
+  <b>Path:</b>
+  <%= @storycreator_algorithm.path %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @storycreator_algorithm.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_storycreator_algorithm_path(@storycreator_algorithm) %> |
+<%= link_to 'Back', storycreator_algorithms_path %>
