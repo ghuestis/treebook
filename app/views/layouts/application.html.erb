@@ -54,25 +54,7 @@
 	</div>
 	<div class="container-fluid">
 		<div class="row-fluid">
-			<div class="span3 leftchunk">
-				<div class="sidebar-nav leftchunk">
-					<ul class="navbar navbar-fixed-top savvy span3">
-						<li class="darken-header">Stats</li>
-						<li><%= link_to "Error Rates", '#', class:"btn btn-primary" %></li>
-						<li><%= link_to "Output Quantities", '#', class:"btn btn-primary" %></li>
-						<li><%= link_to "Flow Rates", '#', class:"btn btn-primary" %></li>
-						<li class="darken-header">Utilities and Tests</li>
-						<li><%= link_to "Storycreator Algorithms", storycreator_algorithms_path, class:"btn btn-primary" %></li>
-						<li><%= link_to "Sanitation Methods", '#', class:"btn btn-primary" %></li>
-						<li><%= link_to "Pathing Tests", '#', class:"btn btn-primary" %></li>
-						<li class="darken-header">Contact HLE</li>
-						<li><%= link_to "Submit Editorial Request", '#', class:"btn btn-primary" %></li>
-						<li><%= link_to "Red Phone", '#', class:"btn btn-primary" %></li>
-						<li><%= link_to "Bat Phone", '#', class:"btn btn-primary" %></li>
-					</ul>
-				</div>
-			</div>
-			<div class="container span6 middlechunk">
+			<div class="container middlechunk">
 				<p class="notice"><%= notice %></p>
 				<p class="alert"><%= alert %></p>
 				<%= yield %>

@@ -1,7 +1,6 @@
 Treebook::Application.routes.draw do
   resources :storycreator_algorithms, :statuses
 
-
   devise_for :users
 
   root to: 'statuses#index'
