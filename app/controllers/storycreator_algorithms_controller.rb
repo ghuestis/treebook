@@ -80,10 +80,4 @@ class StorycreatorAlgorithmsController < ApplicationController
       format.json { head :no_content }
     end
   end
-
-  #USE /storycreator_algorithms/use
-  #USE /storycreator_algorithms/use.json
-  def use (method_name, file)
-    @storycreator_algorithm = StorycreatorAlgorithm.use(method_name, file)
-  end
 end

@@ -1,3 +1,3 @@
 class StorycreatorAlgorithm < ActiveRecord::Base
-  attr_accessible :description, :id, :method_name, :path
+  attr_accessible :id, :database, :identifier, :server, :tables, :anchor
 end

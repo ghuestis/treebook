@@ -1,25 +1,55 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <b>Id:</b>
-  <%= @storycreator_algorithm.id %>
+	<b>Identifier:</b>
+	<%= @storycreator_algorithm.identifier %>
 </p>
 
 <p>
-  <b>Method name:</b>
-  <%= @storycreator_algorithm.method_name %>
+	<b>Server:</b>
+	<%= @storycreator_algorithm.server %>
 </p>
 
 <p>
-  <b>Path:</b>
-  <%= @storycreator_algorithm.path %>
+	<b>Database:</b>
+	<%= @storycreator_algorithm.database %>
 </p>
 
 <p>
-  <b>Description:</b>
-  <%= @storycreator_algorithm.description %>
+	<b>Tables:</b>
+	<%= @storycreator_algorithm.tables %>
 </p>
 
+<div class="container">
+	<% tables = @storycreator_algorithm.tables.split(/, /) %>
+	<% quary = load_dataset('journatic', 'journatic', @storycreator_algorithm.server, @storycreator_algorithm.database, tables) %>
+	
+	<% i=0 %>
+	<% quary.each do |dataset| %>
+	
+	<%  h = 0 %>
+	<table class="table table-bordered2">
+		<div class="table-name"><%=tables[i]%></div>
+		
+		<tr>
+			<% dataset.fields.each do |field| %>
+			<th class="table-header"><%= field %></th>
+			<% end %>
+		</tr>
+		<% dataset.take(10).each do |row| %>
+		<tr>
+			<% row.values.each do |value| %>
+			<th class="table-body"><%=value%></th>
+			<% end %>
+		</tr>
+		<% end %>
+	</table>
+	<% i+=1 %>
+	<%end%>
+
+
+</div>
 
 <%= link_to 'Edit', edit_storycreator_algorithm_path(@storycreator_algorithm) %> |
 <%= link_to 'Back', storycreator_algorithms_path %>
+

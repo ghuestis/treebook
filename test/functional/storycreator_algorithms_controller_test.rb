@@ -18,7 +18,7 @@ class StorycreatorAlgorithmsControllerTest < ActionController::TestCase
 
   test "should create storycreator_algorithm" do
     assert_difference('StorycreatorAlgorithm.count') do
-      post :create, storycreator_algorithm: { description: @storycreator_algorithm.description, id: @storycreator_algorithm.id, method_name: @storycreator_algorithm.method_name, path: @storycreator_algorithm.path }
+      post :create, storycreator_algorithm: { database: @storycreator_algorithm.database, identifier: @storycreator_algorithm.identifier, server: @storycreator_algorithm.server, tables: @storycreator_algorithm.tables }
     end
 
     assert_redirected_to storycreator_algorithm_path(assigns(:storycreator_algorithm))
@@ -35,7 +35,7 @@ class StorycreatorAlgorithmsControllerTest < ActionController::TestCase
   end
 
   test "should update storycreator_algorithm" do
-    put :update, id: @storycreator_algorithm, storycreator_algorithm: { description: @storycreator_algorithm.description, id: @storycreator_algorithm.id, method_name: @storycreator_algorithm.method_name, path: @storycreator_algorithm.path }
+    put :update, id: @storycreator_algorithm, storycreator_algorithm: { database: @storycreator_algorithm.database, identifier: @storycreator_algorithm.identifier, server: @storycreator_algorithm.server, tables: @storycreator_algorithm.tables }
     assert_redirected_to storycreator_algorithm_path(assigns(:storycreator_algorithm))
   end
 

@@ -1,13 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  id: 1
-  method_name: MyString
-  path: MyString
-  description: MyText
+  identifier: MyString
+  server: MyString
+  database: MyString
+  tables: MyText
 
 two:
-  id: 1
-  method_name: MyString
-  path: MyString
-  description: MyText
+  identifier: MyString
+  server: MyString
+  database: MyString
+  tables: MyText

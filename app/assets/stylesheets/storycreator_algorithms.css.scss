@@ -2,6 +2,25 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.table-name{
+	background: rgb(100, 221, 190);
+	border: 1px solid rgb(221, 221, 221);
+	border-radius: 5px;
+	padding: 5px;
+}
+
+.table-body{
+	background: rgb(221, 221, 221);
+	border-radius: 5px
+}
+
 .table-header{
-	text-align: left;
+	background: rgb(200, 150, 130);
+	border-radius: 5px
+}
+
+.table-bordered2 th,
+.table-bordered2 td {
+  border-left: 1px solid rgb(175, 208, 160);
+  border-top: 1px solid rgb(180, 150, 120);
 }

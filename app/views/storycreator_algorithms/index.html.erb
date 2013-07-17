@@ -1,18 +1,16 @@
 <h1>Listing storycreator_algorithms</h1>
 
 <table>
-  <tr>
-    <th class="span2 table-header">Method name</th>
-    <th class="span10 table-header">Description</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
 
 <% @storycreator_algorithms.each do |storycreator_algorithm| %>
   <tr>
-    <td><%= link_to "#{storycreator_algorithm.method_name}",  "#"%></td>
-    <td><%= storycreator_algorithm.description %></td>
+    <%= link_to "#{storycreator_algorithm.identifier}", "/storycreator_algorithms/"+storycreator_algorithm.id.to_s %>
+    <p><%= storycreator_algorithm.server %></p>
+    <p><%= storycreator_algorithm.database %></p>
+    <p><%= storycreator_algorithm.tables %></p>
+    <td><%= link_to 'Show', storycreator_algorithm %></td>
+    <td><%= link_to 'Edit', edit_storycreator_algorithm_path(storycreator_algorithm) %></td>
+    <td><%= link_to 'Destroy', storycreator_algorithm, method: :delete, data: { confirm: 'Are you sure?' } %></td>
   </tr>
 <% end %>
 </table>

@@ -10,6 +10,7 @@ gem 'devise'
 gem 'simple_form'
 gem 'require_all'
 gem 'mysql2'
+gem 'jquery-ui-rails'
 
 # Gems used only for assets and not required
 # in production environments by default.

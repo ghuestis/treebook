@@ -1,4 +1,7 @@
 Treebook::Application.routes.draw do
+  resources :storycreator_algorithms
+
+
   resources :storycreator_algorithms, :statuses
 
   devise_for :users
