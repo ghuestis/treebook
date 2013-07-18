@@ -29,13 +29,8 @@
 	
 	<%  h = 0 %>
 	<table class="table table-bordered2">
-		<div class="table-name"><%=tables[i]%></div>
-		
-		<tr>
-			<% dataset.fields.each do |field| %>
-			<th class="table-header"><%= field %></th>
-			<% end %>
-		</tr>
+	
+		<% def showtables(dataset) %>
 		<% dataset.take(10).each do |row| %>
 		<tr>
 			<% row.values.each do |value| %>
@@ -43,6 +38,15 @@
 			<% end %>
 		</tr>
 		<% end %>
+		<% end %>
+		<div class="table-name"><%=tables[i]%></div>
+		
+		<tr>
+			<% dataset.fields.each do |field| %>
+			<th class="table-header"><a href="#"><%= field %></a></th>
+			<% end %>
+		</tr>
+		
 	</table>
 	<% i+=1 %>
 	<%end%>
